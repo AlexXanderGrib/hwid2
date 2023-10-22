@@ -31,7 +31,13 @@
     "type": "git",
     "url": "git+https://github.com/AlexXanderGrib/hwid2.git"
   },
-  "keywords": ["hardware", "id", "hwid", "machine", "iot"],
+  "keywords": [
+    "hardware",
+    "id",
+    "hwid",
+    "machine",
+    "iot"
+  ],
   "files": [
     "dist/",
     "src/",
@@ -74,6 +80,7 @@
     "prettier": "^2.8.7",
     "rimraf": "^4.4.1",
     "rollup": "^3.20.2",
+    "rollup-plugin-add-shebang": "^0.3.1",
     "rollup-plugin-cleanup": "^3.2.1",
     "rollup-plugin-prettier": "^3.0.0",
     "rollup-plugin-typescript2": "^0.34.1",

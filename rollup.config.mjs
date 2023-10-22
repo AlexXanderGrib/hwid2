@@ -3,6 +3,7 @@ import { builtinModules } from "module";
 import glob from "glob";
 import cleanup from "rollup-plugin-cleanup";
 import prettier from "rollup-plugin-prettier";
+import shebang from "rollup-plugin-add-shebang";
 
 import packageJson from "./package.json" assert { type: "json" };
 import prettierConfig from "./.prettierrc.json" assert { type: "json" };
@@ -67,7 +68,8 @@ const config = {
     prettier({
       ...prettierConfig,
       parser: "babel-ts"
-    })
+    }),
+    shebang()
   ]
 };
 
