@@ -1,10 +1,8 @@
-import { Example } from "..";
+import { getHwId } from "../index";
 
-describe(Example.name, () => {
-  test("test", () => {
-    const container = new Example(10);
+test("Hardware id", () => {
+  const id = getHwId();
 
-    expect(container).toBeInstanceOf(Example);
-    expect(container.value).toBe(10);
-  });
+  expect(id).toBeTruthy();
+  expect(typeof id).toBe("string");
 });

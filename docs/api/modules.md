@@ -4,16 +4,27 @@
 
 ## Table of contents
 
-### References
+### Namespaces
 
-- [default](modules.md#default)
+- [default](modules/default.md)
 
-### Classes
+### Functions
 
-- [Example](classes/Example.md)
+- [getHwId](modules.md#gethwid)
 
-## References
+## Functions
 
-### default
+### getHwId
 
-Renames and re-exports [Example](classes/Example.md)
+▸ **getHwId**(): `string` \| `undefined`
+
+Returns machine hardware id.
+Returns `undefined` if cannot determine.
+
+#### Returns
+
+`string` \| `undefined`
+
+#### Defined in
+
+dist/index.d.ts:6

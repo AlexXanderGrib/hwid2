@@ -24,7 +24,8 @@
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
     "types": [
-      "jest"
+      "jest",
+      "node"
     ],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,

@@ -1,7 +1,7 @@
 {
-  "name": "package_template",
+  "name": "hwid2",
   "version": "1.0.0",
-  "description": "🚀 Package template",
+  "description": "💻 Get machine unique id. 0 dependencies",
   "scripts": {
     "test": "jest",
     "build:dist": "rimraf dist && rollup -c",
@@ -17,6 +17,7 @@
   "type": "commonjs",
   "types": "./index.d.ts",
   "typings": "./index.d.ts",
+  "bin": "./dist/bin.js",
   "sideEffects": false,
   "exports": {
     "./package.json": "./package.json",
@@ -28,9 +29,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexXanderGrib/package-template.git"
+    "url": "git+https://github.com/AlexXanderGrib/hwid2.git"
   },
-  "keywords": [],
+  "keywords": ["hardware", "id", "hwid", "machine", "iot"],
   "files": [
     "dist/",
     "src/",
@@ -52,12 +53,12 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlexXanderGrib/package-template/issues"
+    "url": "https://github.com/AlexXanderGrib/hwid2/issues"
   },
-  "homepage": "https://github.com/AlexXanderGrib/package-template#readme",
+  "homepage": "https://github.com/AlexXanderGrib/hwid2#readme",
   "devDependencies": {
     "@types/jest": "^29.2.3",
-    "@types/node": "^18.11.9",
+    "@types/node": "^8.10.66",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",
     "eslint": "^8.36.0",
@@ -84,6 +85,6 @@
     "typescript": "^5.0.2"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=8"
   }
 }
